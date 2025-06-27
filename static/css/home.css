@@ -6,6 +6,7 @@ body{
     font-family: "Bona Nova SC", serif;
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 150px;
 }
 
 .navbar{
@@ -110,7 +111,7 @@ body{
       color: #6d8389;
       margin-bottom: 10px;
       border-bottom: 1px solid #3d3f43;
-      padding-bottom: 5px;
+      padding-bottom: 4px;
     }
 
     .task {
@@ -124,7 +125,7 @@ body{
     .task h3{
       color: #6d8389;
       width: 68%;
-      font-size: x-large;
+      font-size: large;
     }
     
     .task button{
