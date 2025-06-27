@@ -1,3 +1,86 @@
-body{
-    background-color: blue;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+  background: linear-gradient(135deg, #16222A, #3A6073);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.register-box {
+  background: rgba(28, 28, 28, 0.6); 
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  text-align: center;
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: fadeIn 0.8s ease;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.but{
+  width: 100%;
+  padding: 0.75rem;
+  background: #0078D4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 120, 212, 0.4);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.but:hover {
+  background: #005a9e;
+  transform: translateY(-2px);
+}
+
+
+a {
+  color: #cccccc;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
