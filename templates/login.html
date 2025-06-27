@@ -8,6 +8,36 @@
     <link rel="stylesheet" href={% static "css/login.css" %}>
 </head>
 <body>
-    <h1>welcome to the login page</h1>
+    <div class="overlay">
+    <div class="register-box">
+      <h2>Login</h2>
+
+      <form onsubmit="return checkLogin()">
+        <input class="input" id="username" type="text" placeholder="Username" required />
+
+        <input class="input" id="password" type="password" placeholder="Password" required />
+
+        <button class="but" type="submit">Login</button>
+      </form>
+
+      <div class="links">
+        <a href="#">Don't have an account? Register</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function checkLogin() {
+      let enteredUsername = document.getElementById("username").value.trim();
+      let enteredPassword = document.getElementById("password").value;
+
+      if (enteredUsername != "" && enteredPassword != "") {
+        alert("Logged in successfully!");
+      } 
+      else {
+      alert("Please enter both username and password.");
+      } 
+    }
+  </script>
 </body>
 </html>

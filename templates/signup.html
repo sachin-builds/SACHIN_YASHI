@@ -5,9 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href={% static "css/signup.css" %}>
+    <link rel="stylesheet" href={% static 'css/signup.css' %}>
 </head>
 <body>
-    <h1>welcome to the signup page</h1>
-</body>
+    <div class="overlay">
+    <div class="register-box">
+      <h2>Create Account</h2>
+
+      <form onsubmit="return validatePasswords()">
+        <input class="input" id="username" type="text" placeholder="Username" required />
+        <input class="input" id="password" type="password" placeholder="Password" required />
+        <input class="input" id="confirm-password" type="password" placeholder="Confirm Password" required />
+        <button class="but" type="submit">Register</button>
+      </form>
+
+      <div class="links">
+        <a href="#">Already have an account? Sign in</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function validatePasswords() {
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirm-password").value;
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+      } 
+      else {
+      alert("Registration successful!");
+    }
+    }
+  </script>
+
+</body> 
 </html>

@@ -1,3 +1,145 @@
+
+
 body{
-    background-color: red;
+    background-color:#1c1c1c;
+    margin: 0;
+    font-family: "Bona Nova SC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  background-color: #1e51a8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+}
+
+.navbar h3{
+  color: aliceblue;
+  margin-left: 3rem;
+}
+
+/* .navbar input[type=text] {
+  background-color: #eee;
+  padding: 5px;
+  border: none ;
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-left: 500px;
+  margin-bottom: 4px;
+  width: 30%;
+  font-size: 17px;
+  text-align: left;
+  position: fixed;
+} */
+
+
+.container {
+      max-width: 1000px;
+      margin: auto;
+      /* margin: 100px 100px 100px 480px; */
+      
+      
+}
+ h1 {
+      text-align: center;
+      color: #333;
+    
+    }
+
+    .input-section {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 120px;
+      background-color: #222222;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #3d3f43;
+      background-color:#3d3f43 ;
+      border-radius: 30px;
+      outline: none;
+      margin-right: 20px;
+    }
+
+    button {
+      padding: 10px;
+      width: 15%;
+      background-color: 
+#333333;
+      color: #6d8389;
+      border: none;
+      border-radius: 30px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       font-weight: 600;
+      font-size: medium;
+    }
+    button:hover {
+  background-color:#6d8389; 
+  color: #333333;
+}
+
+    .tasks-section {
+     margin: none;
+     padding: none;
+      /* justify-content: space-between; */
+      gap: 20px;
+    }
+
+    .task-list {
+      flex: 1;
+      background: #222222;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .task-list h2 {
+      font-size: 25px;
+      color: #6d8389;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #3d3f43;
+      padding-bottom: 5px;
+    }
+
+    .task {
+      padding: 6px;
+      border-bottom: 1px solid #3d3f43;
+      
+      display :flex;
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+    .task h3{
+      color: #6d8389;
+      width: 68%;
+      font-size: x-large;
+    }
+    
+    .task button{
+      transition-duration: 0.4s;
+       cursor: pointer;
+      background-color: #333333;
+      color: #6d8389;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: medium;
+      margin-right: 5px;
+      
+    }
+   .task button:hover {
+  background-color:#6d8389; 
+  color: #333333;
 }
